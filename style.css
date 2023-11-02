@@ -11,7 +11,7 @@
   --bg--fucsia:#a93f55;
   --text-fucsia: #a93f55;
 }
-
+/*Fin paletas rosas*/
 /*colores fríos*/
 .ColorVioleta
 {
@@ -19,13 +19,19 @@
   --text-violeta: #2d3142;
   
 }
-
+/*fin colores fríos*/
+/*colores grises*/
+.ColorGris
+{
+  --bg-Gris: #3a3a3a;
+  --text-Gris: #3a3a3a;
+}
 .TheGod
 {
   height: 300px;
   width: 850px; background:url('http://placekitten.com/850/300');
   margin:0 auto;
-  border: #000 solid 10px;
+  border: var(--bg-Gris) solid 10px;
    box-sizing:border-box;
   display:flex;
   align-items: end;
@@ -40,7 +46,7 @@
   font-size: 3rem;
   margin: 0auto;
   color: var(--text-color);
-  text-shadow: 2px -1px #000;
+  text-shadow: 2px -1px var(--bg-Gris);
 }
 header
 {
@@ -66,7 +72,6 @@ header
   text-align:center;
   line-height:4;
   box-sizing: border-box;
-  border: 3px solid #000;
   font-family: 'Fira Sans', sans-serif;
   font-weight:400;
   font-size:1rem;
@@ -88,7 +93,7 @@ header + div
 {
   width:850px;
   height: 600px;
-  background-color:#000;
+  background-color:var(--bg-Gris);
 }
 
 .TheGod +div > div > a
