@@ -1,0 +1,92 @@
+/*colores*/
+/*paletas rosas*/
+.RosaSalmon{
+  
+  --bg-color: #FFAEBC;
+  --text-color: #FFAEBC;
+}
+
+.RosaFucsia
+{
+  --bg--fucsia:#a93f55;
+  --text-fucsia: #a93f55;
+}
+
+/*colores fríos*/
+.ColorVioleta
+{
+  --bg-violeta: #2d3142;
+  --text-violeta: #2d3142;
+  
+}
+
+.TheGod
+{
+  height: 300px;
+  width: 850px; background:url('http://placekitten.com/850/300');
+  margin:0 auto;
+  border: #000 solid 10px;
+   box-sizing:border-box;
+  display:flex;
+  align-items: end;
+  justify-content:center;
+}
+
+.TheGod >span
+{
+  font-family: 'Eczar', serif;
+  font-weight:800;
+  font-style:italic;
+  font-size: 3rem;
+  margin: 0auto;
+  color: var(--text-color);
+  text-shadow: 2px -1px #000;
+}
+header
+{
+  height:365px;
+  width:850px;
+  margin: 0auto;
+  box-sizing:border-box;
+}
+
+.TheGod +div 
+{
+  height: 60px;
+  width:850px;
+  display:flex;
+  flex-direction:row:
+}
+
+.TheGod +div > div
+{
+  background-color: var(--bg-color);
+  height: 60px;
+  width:20%;
+  text-align:center;
+  line-height:4;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:400;
+  font-size:1rem;
+  color:#000;
+  transition:0.5s;
+}
+
+.TheGod +div > div:hover
+{
+  background-color:var(--bg--fucsia);
+  letter-spacing:2px;
+}
+.TheGod +div > div:active
+{
+  color:var(--bg-violeta);
+}
+
+header + div
+{
+  width:850px;
+  height: 600px;
+  background-color:#000;
+}
