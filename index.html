@@ -1,29 +1,252 @@
-<!doctype html>
- <html>
-   <head>
-      <meta charset="utf-8"/>
-      <title>Yuri's place</title>
-     <link rel="stylesheet" href="style.css"/>
-   </head>
-   <body>
-     <header class="RosaSalmon RosaFucsia ColorVioleta ColorGris">
-     <div class="TheGod">
-       
-       <span>Yuri's place</span>
-     </div>
-       <div> 
-         <div><a href="index.html">Sobre Yuri</a></div>
-         <div><a href="#">Memes</a></div>
-         <div><a href="#">Fanart</a></div>
-         <div><a href="#">Momentos</a></div>
-         <div><a href="#">Gameplay</a></div>
-       </div>
-     </header>
-     <div class="ColorGris">
-       
-     </div>
-   </body>
-</html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Eczar:wght@800&family=Fira+Sans:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+/*colores*/
+/*paletas rosas*/
+.RosaSalmon{
+  
+  --bg-color: #FFAEBC;
+  --text-color: #FFAEBC;
+}
+
+.RosaFucsia
+{
+  --bg--fucsia:#a93f55;
+  --text-fucsia: #a93f55;
+}
+/*Fin paletas rosas*/
+/*colores fríos*/
+.ColorVioleta
+{
+  --bg-violeta: #2d3142;
+  --text-violeta: #2d3142;
+  --bg-rosaintenso:#e97676;
+  --text-rosaintenso:#e97676;
+  
+}
+/*fin colores fríos*/
+/*colores grises*/
+.ColorGris
+{
+  --bg-Gris: #3a3a3a;
+  --text-Gris: #3a3a3a;
+  --bg-GrisC: #d9d8d8;
+  --text-GrisC:#d9d8d8;
+}
+
+
+.TheGod
+{
+  height: 300px;
+  width: 850px; background:url('https://i.ibb.co/wYwPqpQ/Date-1.png');
+  margin:0 auto;
+  border: var(--bg-Gris) solid 10px;
+   box-sizing:border-box;
+  display:flex;
+  align-items: end;
+  justify-content:center;
+  background-size:cover;
+}
+
+.TheGod >span
+{
+  font-family: 'Eczar', serif;
+  font-weight:800;
+  font-style:italic;
+  font-size: 3rem;
+  margin: 0auto;
+  color: var(--text-color);
+  text-shadow: 2px -1px var(--bg-Gris);
+}
+header
+{
+  height:365px;
+  width:850px;
+  margin: 0auto;
+  box-sizing:border-box;
+  position:relative;
+  z-index:100;
+ 
+}
+
+.TheGod +div 
+{
+  height: 60px;
+  width:850px;
+  display:flex;
+  flex-direction:row;
+     border-bottom: 8px solid var(--bg--fucsia);
+}
+
+.TheGod +div > div
+{
+  background-color: var(--bg-color);
+  height: 60px;
+  width:20%;
+  text-align:center;
+  line-height:4;
+  box-sizing: border-box;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:400;
+  font-size:1rem;
+  color:#000;
+  transition:0.5s;
+}
+
+.TheGod +div > div:hover
+{
+  background-color:var(--bg--fucsia);
+  letter-spacing:2px;
+}
+#LinkActivo
+{
+  background-color:var(--bg-violeta)!important;
+}
+
+header + div
+{
+  width:850px;
+  height:100px;
+  background-color:var(--bg-color);
+  display:flex;
+  justify-content:start;
+  align-items:center;
+  border-bottom: 5px solid var(--bg--fucsia);
+ 
+}
+.FotoBienvenida
+{
+   
+ margin-left: 2%;
+background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.png');
+  height:80px;
+  width:80px;
+  -webkit-box-shadow:inset 0px 0px 0px 9px var(--bg-fucsia);
+    -moz-box-shadow:inset 0px 0px 0px 9px var(--bg--fucsia);
+    box-shadow:inset 0px 0px 0px 9px var(--bg--fucsia);
+}
+
+.FotoBienvenida
+{
+  border-left: 4px solid var(--bg-violeta);
+  border-radius: 50%;
+  border-top: 3px solid var(--bg-color);
+  border-bottom: 3px solid var(--bg-color);
+  border-right: 4px solid var(--bg-violeta);
+  position:relative;
+  outline: 5px solid var(--bg--fucsia);
+  outline-offset: 8px;
+  position:relative;
+  z-index:1;
+}
+
+.FotoBienvenida +div
+{
+  margin-left: 10%;
+  font-family: 'pacifico', italic;
+  font-size: 2rem;
+  color: var(--bg-violeta);
+  text-decoration:underline;
+  text-shadow: 2px -2px var(--bg--fucsia);
+    transition:0.5s;
+}
+
+.FotoBienvenida +div:hover
+{
+  letter-spacing: 5px;
+}
+
+.ComienzoBody
+{
+  position:relative;
+  z-index:100;
+  width:850px;
+  min-width:850px;
+  height: 600px;
+  background-color:var(--bg-Gris);
+  display:flex;
+  flex-direction:raw;
+  justify-content: center;
+}
+
+.TheGod +div > div > a
+{
+  text-decoration:none;
+  color:#000;
+}
+
+.YuriPerfil
+{
+  background:url('https://i.ibb.co/M2N8SRV/Dise-o-sin-t-tulo.png');
+  height:190px;
+  width:200px;
+  margin-left: 4%;
+  margin-top: 10%;
+  outline: 10px solid var(--bg-color);
+  outline-offset:10px;
+  box-sizing:border-box;
+  border: 2px solid var(--bg-rosaintenso);
+  
+}
+
+.YuriPerfil + div
+{
+  display:flex;
+  flex-direction:column;
+  margin-top: 7.6%;
+  margin-left:2%;
+  
+}
+
+.YuriPerfil + div > div
+{
+  width:300px;
+  height:26px;
+  background-color: var(--bg-color);
+  font-family:'Eczar', italic;
+  font-size: 2rem;
+  text-align:center;
+  padding-bottom:3%;
+  color:var(--bg-Gris);
+  font-weight: 400px;
+  text-shadow: 4px 4px var(--bg--Gris);
+  
+  
+}
+
+.YuriPerfil + div >div + div
+{
+  background-color:var(--bg-Gris);
+  color:var(--bg-GrisC);
+ 
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  font-size:10px;
+  font-style:none;
+  text-shadow: 0px!important;
+  text-align: justify;
+  margin: 4%;
+  height:100%;
+  max-width:280px;
+  max-height:175px;
+  overflow-y:scroll;
+  padding-right:3%;
+  
+}
+
+/*scrolls*/
+
+#Queen-Scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#Queen-Scroll::-webkit-scrollbar
+{
+	width: 3px;
+  background-color: var(--bg-color);
+}
+
+#Queen-Scroll::-webkit-scrollbar-thumb
+{
+	background-color: var(--bg-color);
+	
+}
