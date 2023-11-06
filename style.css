@@ -1,5 +1,6 @@
 /*colores*/
 /*paletas rosas*/
+
 .RosaSalmon{
   
   --bg-color: #FFAEBC;
@@ -31,7 +32,39 @@
   --text-GrisC:#d9d8d8;
 }
 
+/*inicio de code de la página*/
 
+html, body
+{
+  height:100%;
+  width:100%;
+}
+.WebEntera
+{
+  background-size:cover;
+   min-height: 100vh;
+  min-width: 100vw;
+  padding:2%;
+   background:url('https://i.ibb.co/NCHRsf6/d79f51043fa973b75a8969bce7a9216c.jpg');
+}
+
+.MarcoLindo
+{
+  width:850px;
+  height:100%;
+  border: 5px solid var(--bg--fucsia);
+ 
+  
+}
+
+#TodoCentrado
+{
+  
+}
+#TodoCentrado, .MarcoLindo
+{
+  margin:0 auto;
+}
 .TheGod
 {
   height: 300px;
