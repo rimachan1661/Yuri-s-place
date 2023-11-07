@@ -34,6 +34,9 @@
 
 /*inicio de code de la página*/
 
+body{
+  position:relative;
+}
 html, body
 {
   height:100%;
@@ -47,7 +50,9 @@ html, body
   padding:2%;
    background:url('https://i.ibb.co/NCHRsf6/d79f51043fa973b75a8969bce7a9216c.jpg');
 }
+/*fin de centramiento de web*/
 
+/*inicio página central principal*/
 .MarcoLindo
 {
   width:850px;
@@ -197,6 +202,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   display:flex;
   flex-direction:raw;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .TheGod +div > div > a
@@ -225,6 +231,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   flex-direction:column;
   margin-top: 7.6%;
   margin-left:2%;
+  
   
 }
 
@@ -264,6 +271,103 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   
 }
 
+.Pdb
+{
+  display:flex;
+  flex-direction:column;
+  width: 751px;
+   height: 202px;
+  background-color:var(--bg-Gris);
+  position:relative;
+  font-family:'Lato', sans-serif;
+ 
+  
+}
+
+.Theprofile
+{
+  width:751px;
+  height:80px;
+  background-color:var(--bg-color);
+  text-align:center;
+  padding-top:2%;
+}
+
+.Theprofile > span
+{
+  
+  font-family: 'Eczar', serif;
+  font-weight:400;
+  font-size:1.5rem;
+}
+
+.PdbImage
+{
+  background:url('https://i.ibb.co/mC1ZFrm/unnamed.jpg');
+  width: 96px;
+  height:96px;
+  position:absolute;
+  border-radius: 50%;
+  left:5%;
+  top:20%;
+  border: 5px solid var(--bg-Gris);
+}
+
+.YuriPerfil + div + a
+{
+  text-decoration:none;
+  color: var(--text-Gris);
+}
+/*final página principal*/
+
+/*inicio barra derecha*/
+
+.WebEntera + div
+{
+  position: absolute;
+ right: -5%;
+  height:100%;
+  min-height: 800px;
+  width: 220px;
+  top:3.3%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.WebEntera + div > div
+{
+  box-sizing:border-box;
+  border: 4px solid var(--bg--fucsia);
+   
+}
+
+.Actualizaciones
+{
+  background-color: var(--bg-Gris);
+  width:100%;
+  height: 350px;
+}
+
+.Actualizaciones > span
+{
+  background-color:var(--bg--fucsia);
+  padding-bottom:5%;
+  padding-top:5%;
+ padding-right:3%;
+  padding-left:2%;
+  position:absolute;
+  font-size:1.3rem;
+  color: var(--bg-Gris);
+  
+  
+  font-family:'Eczar', 'serif';
+  line-height:2;
+ 
+  
+}
+
+/*fin barra derecha*/
 /*scrolls*/
 
 #Queen-Scroll::-webkit-scrollbar-track
