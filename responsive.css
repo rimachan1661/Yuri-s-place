@@ -8,11 +8,44 @@
   {
     width:100%;
   }
-  
+   .TheGod +div
+  {
+    width:100%;
+    flex-direction:column;
+    
+  }
   .TheGod +div > div
   {
      width:100%;
-    height:20%;
+    min-width:750px;
+    height:10%;
+  }
+  
+  .ComienzoBody
+  {
+    flex-direction:column;
+    justify-content:center;
+    aling-items:center;
+  }
+  .YuriPerfil
+  {
+    
+    height: 25%;
+    width: 100%;
+    margin-top: 69%;
+    min-width: 316px;
+    background-size: cover;
+}
+  
+  
+  .YuriPerfil + div > div
+  {
+    
+  }
+  
+  .Theprofile, .PdbImage
+  {
+    display:none;
   }
   
 }
