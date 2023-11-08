@@ -1,20 +1,17 @@
 /*colores*/
 /*paletas rosas*/
 
-.RosaSalmon{
+.Rosas{
   
-  --bg-color: #FFAEBC;
-  --text-color: #FFAEBC;
-}
-
-.RosaFucsia
-{
-  --bg--fucsia:#a93f55;
+  --bg-rosa: #FFAEBC;
+  --text-rosa: #FFAEBC;
+  --bg-fucsia:#a93f55;
   --text-fucsia: #a93f55;
 }
-/*Fin paletas rosas*/
+
+/*fin paletas rosas*/
 /*colores fríos*/
-.ColorVioleta
+.Violetas
 {
   --bg-violeta: #2d3142;
   --text-violeta: #2d3142;
@@ -22,9 +19,10 @@
   --text-rosaintenso:#e97676;
   
 }
+
 /*fin colores fríos*/
 /*colores grises*/
-.ColorGris
+.Grises
 {
   --bg-Gris: #3a3a3a;
   --text-Gris: #3a3a3a;
@@ -33,47 +31,54 @@
 }
 
 /*inicio de code de la página*/
-
-
 html, body
 {
   height:100%;
   width:100%;
 }
+body
+{
+  background:url('https://i.ibb.co/NCHRsf6/d79f51043fa973b75a8969bce7a9216c.jpg');
+}
 .WebEntera
 {
-  background-size:cover;
-  min-height: 100%;
- min-width: 100%;
-  padding:2%;
+  width:100%;
+  height:100%;
   display:flex;
-  justify-content:space-around;
-   background:url('https://i.ibb.co/NCHRsf6/d79f51043fa973b75a8969bce7a9216c.jpg');
+  flex-wrap: wrap;
+  justify-content:space-evenly;
 }
-/*fin de centramiento de web*/
 
-/*inicio página central principal*/
 .MarcoLindo
 {
-  width:55.7%;
-  height:100%;
-  border: 5px solid var(--bg--fucsia);
- 
-  
+  width:100%;
+   height:100%;
+  max-width:850px;
+  min-width:400px;
+  border: 5px solid var(--bg-fucsia);
 }
 
-#TodoCentrado
+header
 {
-  
-}
-#TodoCentrado
-{
+  width:100%;
   max-width:850px;
+  min-wdith:400px;
+  height:30%;
+  max-width:850px;
+  box-sizing:border-box;
+  
+ position:relative;
+  z-index:999;
 }
+
 .TheGod
 {
-  height: 82%;
-  width: 100%; background:url('https://i.ibb.co/wYwPqpQ/Date-1.png');
+  height: 100%;
+  width: 100%; 
+  min-height:326px;
+  max-width:850px;
+  min-width:400px;
+  background:url('https://i.ibb.co/wYwPqpQ/Date-1.png');
   margin:0 auto;
   border: var(--bg-Gris) solid 10px;
    box-sizing:border-box;
@@ -81,7 +86,7 @@ html, body
   align-items: end;
   justify-content:center;
   background-size:cover;
-  max-width:850px;
+  
 }
 
 .TheGod >span
@@ -91,19 +96,8 @@ html, body
   font-style:italic;
   font-size: 3rem;
   margin: 0auto;
-  color: var(--text-color);
+  color: var(--text-rosa);
   text-shadow: 2px -1px var(--bg-Gris);
-}
-header
-{
-  height:365px;
-  width:100%;
-  margin: 0auto;
-  box-sizing:border-box;
-  position:relative;
-  z-index:100;
-  max-width:850px;
- 
 }
 
 .TheGod +div 
@@ -112,13 +106,14 @@ header
   width:100%;
   display:flex;
   flex-direction:row;
-     border-bottom: 8px solid var(--bg--fucsia);
+     border-bottom: 8px solid var(--bg-fucsia);
   max-width:850px;
+  min-width:400px;
 }
 
 .TheGod +div > div
 {
-  background-color: var(--bg-color);
+  background-color: var(--bg-rosa);
   height: 20%;
   width:20%;
   text-align:center;
@@ -126,32 +121,56 @@ header
   box-sizing: border-box;
   font-family: 'Fira Sans', sans-serif;
   font-weight:400;
-  font-size:1rem;
+  font-size:1.2rem;
   color:#000;
   transition:0.5s;
+  background-color:var(--bg-rosa);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-bottom: 5px solid var(--bg-fucsia);
+  
+  
+}
+
+.TheGod +div > div
+{
+  position:relative;
+  z-index:999;
+}
+
+.TheGod +div > div > a
+{
+  text-decoration:none;
+  color:var(--text-Gris);
+  
 }
 
 .TheGod +div > div:hover
 {
-  background-color:var(--bg--fucsia);
+  background-color:var(--bg-fucsia);
   letter-spacing:2px;
 }
 #LinkActivo
 {
   background-color:var(--bg-violeta)!important;
+  color: var(--text-rosa);
 }
 
-header + div
+
+.TodoCentrado
 {
-  width:100%;
+  max-width:850px;
+  min-width:400px;
+   width:100%;
   max-height:100px;
-  background-color:var(--bg-color);
+  background-color:var(--bg-rosa);
   display:flex;
   justify-content:start;
   align-items:center;
-  border-bottom: 5px solid var(--bg--fucsia);
- 
+  border-bottom: 12px solid var(--bg-fucsia);
 }
+
 .FotoBienvenida
 {
    
@@ -160,71 +179,58 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   height:80px;
   width:80px;
   -webkit-box-shadow:inset 0px 0px 0px 9px var(--bg-fucsia);
-    -moz-box-shadow:inset 0px 0px 0px 9px var(--bg--fucsia);
-    box-shadow:inset 0px 0px 0px 9px var(--bg--fucsia);
+    -moz-box-shadow:inset 0px 0px 0px 9px var(--bg-fucsia);
+    box-shadow:inset 0px 0px 0px 9px var(--bg-fucsia);
+  position:relative;
+  z-index:1;
+  
+  
 }
 
 .FotoBienvenida
 {
   border-left: 4px solid var(--bg-violeta);
   border-radius: 50%;
-  border-top: 3px solid var(--bg-color);
-  border-bottom: 3px solid var(--bg-color);
+  border-top: 3px solid var(--bg-rosa);
+  border-bottom: 3px solid var(--bg-rosa);
   border-right: 4px solid var(--bg-violeta);
   position:relative;
-  outline: 5px solid var(--bg--fucsia);
+  outline: 5px solid var(--bg-fucsia);
   outline-offset: 8px;
   position:relative;
   z-index:1;
 }
 
-.FotoBienvenida +div
-{
-  margin-left: 10%;
-  font-family: 'pacifico', italic;
-  font-size: 2rem;
-  color: var(--bg-violeta);
-  text-decoration:underline;
-  text-shadow: 2px -2px var(--bg--fucsia);
-    transition:0.5s;
-}
-
-.FotoBienvenida +div:hover
-{
-  letter-spacing: 5px;
-}
-
 .ComienzoBody
 {
-  position:relative;
-  z-index:100;
-  width:850px;
-  min-width:850px;
-  height: 600px;
+  border-top: 20px solid var(--bg-fucsia);
+  max-width:850px;
+  min-with:400px;
+  width:100%;
+  height: 100%;
   background-color:var(--bg-Gris);
   display:flex;
   flex-direction:raw;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.TheGod +div > div > a
-{
-  text-decoration:none;
-  color:#000;
+  padding-top: 10%;
+  position:relative;
+  z-index:100;
 }
 
 .YuriPerfil
 {
   background:url('https://i.ibb.co/VCZR20w/Dise-o-sin-t-tulo-2.png');
-  height:190px;
-  width:200px;
+  min-height:190px;
+  min-width:200px;
   margin-left: 4%;
-  margin-top: 10%;
-  outline: 10px solid var(--bg-color);
+  margin-top: 20%;
+  outline: 10px solid var(--bg-rosa);
   outline-offset:10px;
   box-sizing:border-box;
   border: 2px solid var(--bg-rosaintenso);
+  width:23%;
+  height:10%;
   
 }
 
@@ -240,16 +246,17 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 
 .YuriPerfil + div > div
 {
+  margin-top:28.8%;
   width:300px;
   height:26px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-rosa);
   font-family:'Eczar', italic;
   font-size: 2rem;
   text-align:center;
   padding-bottom:3%;
   color:var(--bg-Gris);
   font-weight: 400px;
-  text-shadow: 4px 4px var(--bg--Gris);
+  
   
   
 }
@@ -265,7 +272,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   font-style:none;
   text-shadow: 0px!important;
   text-align: justify;
-  margin: 4%;
+  margin: 3.4%;
   height:100%;
   max-width:280px;
   max-height:175px;
@@ -291,7 +298,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 {
   width:751px;
   height:80px;
-  background-color:var(--bg-color);
+  background-color:var(--bg-rosa);
   text-align:center;
   padding-top:2%;
 }
@@ -321,17 +328,17 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
   text-decoration:none;
   color: var(--text-Gris);
 }
-/*final página principal*/
 
-/*inicio barra derecha*/
+/*inicio lateral derecha*/
 
 .BarraDerecha
 {
       
-  margin-right:3%;
-    min-height: 800px;
+  margin-right:0%;
+    max-width: 400px;
+  min-witdh:400px;
   height:100%;
-    width: 15%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -340,7 +347,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 .BarraDerecha > div
 {
   box-sizing:border-box;
-  border: 4px solid var(--bg--fucsia);
+  border: 4px solid var(--bg-fucsia);
    
 }
 
@@ -354,13 +361,15 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 
 .Actualizaciones > span
 {
-  background-color:var(--bg--fucsia);
+  background-color:var(--bg-fucsia);
 
-  position:absolute;
-  font-size:1.3rem;
+  font-size:2rem;
   color: var(--bg-Gris);
   
-  padding:1.6%;
+  padding-top:4%;
+  padding-bottom:4%;
+  padding-right:12%;
+  padding-left:13%;
   font-family:'Eczar', 'serif';
   line-height:2;
  
@@ -368,6 +377,7 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 }
 
 /*fin barra derecha*/
+
 /*scrolls*/
 
 #Queen-Scroll::-webkit-scrollbar-track
@@ -379,11 +389,11 @@ background:url('https://i.ibb.co/HxRYN4Z/Dise-o-sin-t-tulo-1-removebg-preview.pn
 #Queen-Scroll::-webkit-scrollbar
 {
 	width: 3px;
-  background-color: var(--bg-color);
+  background-color: var(--bg-rosa);
 }
 
 #Queen-Scroll::-webkit-scrollbar-thumb
 {
-	background-color: var(--bg-color);
+	background-color: var(--bg-rosa);
 	
 }
